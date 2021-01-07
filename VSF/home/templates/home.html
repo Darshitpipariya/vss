@@ -1,0 +1,382 @@
+{% extends "./basic.html" %}
+
+{% block title %}
+Vadodara Startup Studio – Best Startup Incubator in Vadodara
+{% endblock title %}
+{% load static %}
+{% block body %}
+<div class="main">
+
+    <div class="slider-container rev_slider_wrapper" style="width: 100%; margin: 0 0 -160px 0; padding: 0;">
+
+        <div id="revolutionSlider" class="slider rev_slider" data-plugin-revolution-slider
+            data-plugin-options='{"delay": 9000, "gridwidth": 1170, "gridheight": 500}'>
+
+            <ul>
+                <li data-transition="fade">
+                    <img src="{% static 'img/back-img1.jpg' %} " alt="" data-bgposition="center center" data-bgfit="cover"
+                        data-bgrepeat="no-repeat" class="rev-slidebg">
+                </li>
+
+                <li data-transition="fade">
+                    <img src="{% static 'img/back-img2.jpg' %} " alt="" data-bgposition="center center" data-bgfit="cover"
+                        data-bgrepeat="no-repeat" class="rev-slidebg" data-no-ret>
+                </li>
+
+                <li data-transition="fade">
+                    <img src="{% static 'img/back-img3.jpg' %} " alt="" data-bgposition="center center" data-bgfit="cover"
+                        data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <div style=" padding: 20px 0 ;position: relative; top:-35px; background:linear-gradient(90deg, rgba(205,51,51,0.2) 0%, rgba(205,51,51,0.8) 25%, rgba(205,51,51,0.8) 75%, rgba(205,51,51,0.2) 100%); width: 100%;">  
+            <div class="counters counters-text-light d-flex flex-row justify-content-center flex-wrap">
+                <div class="flex-fill ">
+                    <div class="counter">
+                        <strong data-to="50">50</strong>
+                        <label>STARTUPS INCUBATED</label>
+                    </div>
+                </div>
+                <div class="flex-fill ">
+                    <div class="counter">
+                        <strong data-to="65">65</strong>
+                        <label>STARTUPS MENTORED</label>
+                    </div>
+                </div>
+                <div class="flex-fill ">
+                    <div class="counter">
+                        <strong data-to="515">515</strong>
+                        <label>JOBS GENERATED</label>
+                    </div>
+                </div>
+                <div class="flex-fill ">
+                    <div class="counter">
+                        <strong data-to="2.78">2.78</strong>
+                        <label>CR REVENUE GENERATED</label>
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+
+
+
+
+
+    {% include "./about_us.html" %}
+
+    <div class="home-intro" id="home-intro">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12" style="text-align:center;">
+                    <p>
+                        <strong style="color: #00aaff;">Learn from thousands of hours of evaluating and building
+                            businesses</strong>
+                        <span>BW Businessworld presents BW Accelerate - a innovative accelerator for early stage
+                            startups</span>
+                    </p>
+                </div>
+                <!--<div class="col-md-4">
+								<div class="get-started">
+									<a href="apply.html" class="btn btn-lg btn-primary">Apply Now!</a>
+									
+								</div>
+							</div>-->
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="container" style="margin:10px auto 0;">
+
+        <div class="row center">
+            <div class="col-md-12">
+                <h2 class="word-rotator-title mb-lg">
+                    We Show You the Way to
+                    <strong class="inverted inverted-primary">
+                        <span class="word-rotate" data-plugin-options='{"delay": 2000, "animDelay": 300}'>
+                            <span class="word-rotate-items">
+                                <span>success.</span>
+                                <span>advance.</span>
+                                <span>progress.</span>
+                            </span>
+                        </span>
+                    </strong>
+                </h2>
+
+                <p class="lead">
+                    A strong <b>sector agnostic</b> 3 months/14 week program is designed to accelerate startups
+                    &amp; businesses across stages. Key feautre of the program is a ‘made to measure’ action
+                    plan with a deep focus on 3 fundamental aspects required for a growth focused of business-
+                    MENTOR, MARKET, MONEY
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="home-concept">
+        <div class="container">
+
+            <div class="row center">
+                <span class="sun"></span>
+                <span class="cloud"></span>
+                <div class="col-md-2 col-md-offset-1">
+                    <div class="process-image appear-animation" data-appear-animation="bounceIn">
+                        <img src='{% static "img/sp1.jpg" %}' alt="" />
+                        <strong>Strategy &amp; Planning</strong>
+                    </div>
+                </div>
+                <div class="col-md-2 col-md-offset-1">
+                    <div class="process-image appear-animation" data-appear-animation="bounceIn"
+                        data-appear-animation-delay="200">
+                        <img src='{% static "img/bl1.jpg" %}' alt="" />
+                        <strong>Build &amp; Launch</strong>
+                    </div>
+                </div>
+                <div class="col-md-2 col-md-offset-1">
+                    <div class="process-image appear-animation" data-appear-animation="bounceIn"
+                        data-appear-animation-delay="400">
+                        <img src='{% static "img/m1.jpg" %}' alt="" />
+                        <strong>Go to Market</strong>
+                    </div>
+                </div>
+                <div class="col-md-2 col-md-offset-1">
+                    <div class="process-image appear-animation" data-appear-animation="bounceIn"
+                        data-appear-animation-delay="400">
+                        <img src='{% static "img/nf1.jpg" %}' alt="" />
+                        <strong>Networking &amp; Fundraising</strong>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="home-intro" id="home-intro">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-12" style="text-align:center;">
+                        <p style="font-size:30px !important; margin-bottom:0px;">
+                            <em>3 Months</em>&nbsp; Is All You Need
+
+                        </p>
+                    </div>
+                    <!--<div class="col-md-4">
+									<div class="get-started" style="margin-top:0;">
+										<a href="apply.html" class="btn btn-lg btn-primary">Apply Now!</a>
+
+									</div>
+								</div>-->
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--  <div class="container">
+				
+					<div class="row">
+						<hr class="tall">
+					</div>
+				
+				</div>-->
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-8">
+                <h2>Key <strong>Features</strong></h2>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="feature-box">
+                            <div class="feature-box-icon">
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                            <div class="feature-box-info">
+
+                                <p class="tall">Learning &amp; Mentorship by experienced and successful business
+                                    leaders from across sectors in the country.</p>
+                            </div>
+                        </div>
+                        <div class="feature-box">
+                            <div class="feature-box-icon">
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                            <div class="feature-box-info">
+
+                                <p class="tall">Deep rooted on ground participation and hand holding by
+                                    BW|ACCELERATE team.</p>
+                            </div>
+                        </div>
+                        <div class="feature-box">
+                            <div class="feature-box-icon">
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                            <div class="feature-box-info">
+
+                                <p class="tall">Networking and market connect openings across BW|BUSINESSWORLD
+                                    initiatives and other eco system partnered events &amp; activities.</p>
+                            </div>
+                        </div>
+                        <div class="feature-box">
+                            <div class="feature-box-icon">
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                            <div class="feature-box-info">
+
+                                <p class="tall">Connects with Angel investors, Venture capital fund, Strategic
+                                    investors and other institutional investors through the program.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="feature-box">
+                            <div class="feature-box-icon">
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                            <div class="feature-box-info">
+
+                                <p class="tall">Focused sessions and case studies by the most distinguished and
+                                    decorated faculty from best institutions in the country and abroad.</p>
+                            </div>
+                        </div>
+                        <div class="feature-box">
+                            <div class="feature-box-icon">
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                            <div class="feature-box-info">
+
+                                <p class="tall">Exclusive pitch sessions with investor partners towards the end
+                                    of the program.</p>
+                            </div>
+                        </div>
+                        <div class="feature-box">
+                            <div class="feature-box-icon">
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                            <div class="feature-box-info">
+
+                                <p class="tall">Business relevant assistance by functional experts in finance,
+                                    legal-intellectual property, trademarks, commercialization, licensing,
+                                    technology-web &amp;mobile</p>
+                            </div>
+                        </div>
+                        <div class="feature-box">
+                            <div class="feature-box-icon">
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                            <div class="feature-box-info">
+
+                                <p class="tall">Access and connect with BW ACCELERATE initiative partners and
+                                    other partners in the network.</p>
+                            </div>
+                        </div>
+                        <!--<div class="feature-box" style="text-align:right;">
+                                    	<h2>and more...</h2>
+                                    </div>-->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+
+                <div style="height: 223px; margin-top:35%;" class="pin-wrapper">
+                    <aside style="width: 262.5px;" class="sidebar">
+
+                        <h4>APPLICATION OPEN</h4>
+                        <p>Inviting application for 5th batch of BW Accelerate</p>
+
+                        <a class="btn btn-lg btn-primary mb-lg" href="https://www.f6s.com/bwacceleratebatch5/apply"
+                            target="_blank">Apply Now!</a>
+
+                    </aside>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+    <!--<section class="video section section-text-light section-video section-center mt-none" data-video-path="img/about_us_bg.jpg" data-plugin-video-background data-plugin-options='{"posterType": "jpg", "position": "50% 50%", "overlay": true}'>
+					<div class="container">
+						<div class="row" >
+							<div class="col-md-6">
+								<div class="owl-carousel owl-theme nav-bottom rounded-nav mt-lg mb-none" data-plugin-options='{"items": 1, "loop": false}'>
+									<div>
+										<div class="col-md-12">
+											<div class="testimonial testimonial-style-6 testimonial-with-quotes mb-none">
+												<blockquote>
+													<p>BW Accelerate created a great interface between Start-Ups and Entrepreneurs. A lot of fund owners are looking at such platforms to access the various ideas entrepreneurs bring in.</p>
+												</blockquote>
+												<div class="testimonial-author">
+													<p><strong>Girish Venkataraman, </strong><span>President, IIFL</span></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div>
+										<div class="col-md-12">
+											<div class="testimonial testimonial-style-6 testimonial-with-quotes mb-none">
+												<blockquote>
+													<p>&nbsp;</p>
+												</blockquote>
+												<div class="testimonial-author">
+													<p><strong>&nbsp;</strong><span>&nbsp;</span></p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>-->
+
+
+
+    <!--<div class="row center">
+						<div class="col-md-12">
+							<h2 class="mb-sm word-rotator-title">
+								We're not the only ones
+								<strong>
+									<span class="word-rotate" data-plugin-options='{"delay": 3500, "animDelay": 400}'>
+										<span class="word-rotate-items">
+											<span>excited</span>
+											<span>happy</span>
+										</span>
+									</span>
+								</strong>
+								about accelerate Template...
+							</h2>
+							<h4 class="heading-primary lead tall">20,000 customers in 100 countries use accelerate Template. Meet our customers.</h4>
+						</div>
+					</div>-->
+
+
+    <div class="container">
+
+        <div class="row">
+            <hr class="tall">
+        </div>
+
+    </div>
+
+
+
+
+</div>
+{% endblock body %}

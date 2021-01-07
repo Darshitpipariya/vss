@@ -1,0 +1,62 @@
+{% extends "./basic.html" %}
+
+{% block title %}
+Vadodara Startup Studio – Best Startup Incubator in Vadodara
+{% endblock title %}
+{% load static %}
+{% block css %}
+<link rel='stylesheet' href='//cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css'>
+<style>
+    div.post {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        hyphens: auto;
+    }
+</style>
+
+{% endblock css %}
+{% block body %}
+
+<div class="container">
+    {% if blog_show %}
+    <div class='post'>
+        <h1>{{blog_data.blog_title}}</h1>
+        {{blog_data.date_created}}
+        {{blog_data.blog_description | safe }}
+    </div>
+    {% else %}
+    <div class='post'>
+        <h1>{{blog_list.first.blog_title}}</h1>
+        {{blog_list.first.blog_description | safe }}
+        {{blog_list.first.date_created}}
+    </div>
+    {% endif %}
+    <table class="table table-hover" style='width:100%;' id="myTable">
+        <thead>
+            <tr class=''>
+                <th scope="col">Blogs</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in blog_list %}
+            <tr>
+                <th scope="row"><a class='text-decoration-none' href='{% url "blog" i.id %}'>
+                        <h4>{{i.blog_title}}</h4>
+                    </a></th>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% block js %}
+<script src='//cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js'></script>
+<script>
+    $(document).ready(function () {
+        $('#myTable').DataTable({
+            "scrollX": true
+        });
+    });
+</script>
+{% endblock js %}
+
+{% endblock body %}

@@ -1,9 +1,14 @@
-from django.shortcuts import render
-from .models import blog,news
+from django.shortcuts import render,redirect
+from .models import blog,news,contact_details
+from .forms import contact_form
+from django.http import HttpResponse
+
 
 # Create your views here.
 def home(request):
-    return render(request,'home.html')
+    form=contact_form()
+    context={'form':form}
+    return render(request,'home.html',context)
 
 def blogs(request):
     blog_list=blog.objects.all().order_by('-date_created')
@@ -33,5 +38,31 @@ def news_show(request,pid):
     context={"news_list":news_list,'news_data':news_data,"news_show":True}
     return render(request,'news.html',context)
 
-def basic1(request):
-    return render(request,'basic1.html')
+def contact_us(request):
+    return render(request,'main_contact.html')
+
+def about_us(request):
+    return render(request, 'main_about.html')
+
+def incubation_program(request):
+    return render(request,'incubation_program.html')
+
+def Launchpad_program(request):
+    return render(request,'Launchpad_program.html')
+
+def Acclerator_program(request):
+    return render(request,'Acclerator_program.html')
+
+def gallery(request):
+    return render(request,'gallery.html')
+
+def get_detail(request):
+    if request.method=='POST':
+        form=contact_form(request.POST)
+        if form.is_valid():
+            form.save()
+            return HttpResponse('')
+        else:
+            return JsonResponse({"error": form.errors}, status=400)
+    return JsonResponse({"error": ""}, status=400)
+

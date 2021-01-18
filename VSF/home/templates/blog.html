@@ -27,8 +27,8 @@ Vadodara Startup Studio – Best Startup Incubator in Vadodara
     {% else %}
     <div class='post'>
         <h1>{{blog_list.first.blog_title}}</h1>
-        {{blog_list.first.blog_description | safe }}
         {{blog_list.first.date_created}}
+        {{blog_list.first.blog_description | safe }}
     </div>
     {% endif %}
     <table class="table table-hover" style='width:100%;' id="myTable">

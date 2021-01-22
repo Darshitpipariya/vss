@@ -4,6 +4,11 @@
 Vadodara Startup Studio – Best Startup Incubator in Vadodara
 {% endblock title %}
 {% load static %}
+{% block css %}
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href='{% static "css/startup-slider.css" %}'>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+{% endblock css %}
 {% block body %}
 <div class="main">
 
@@ -70,6 +75,99 @@ Vadodara Startup Studio – Best Startup Incubator in Vadodara
 
 
     {% include "./about_us.html" %}
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="text-center">
+                <h2 class="heading-primary">
+                    Facilities and Offerings
+                </h2>
+                <br>
+                <h4>We have created a state of the art startup incubation
+                    centre for budding startups across Gujarat. Here is
+                    what we offer </h4>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+
+            <div class="col-md-4">
+                <h3>
+                <span class="material-icons">
+                    support
+                </span>&nbsp;
+                Regulatory Support</h3>
+            </div>
+            <div class="col-md-4">
+                <h3>
+                <span class="material-icons">
+                    group_work
+                </span>&nbsp;
+                Co-working and Allied Spaces</h3>
+            </div>
+            <div class="col-md-4">
+                <h3>
+                <span class="material-icons">
+                    help
+                </span>&nbsp;
+                Startup Counselling and Hand-holding support</h3>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                <h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-3 -3 24 24" width="24" height="24"
+                        preserveAspectRatio="xMinYMin" class="icon__icon">
+                        <path
+                            d="M3.19 9.345a.97.97 0 0 1 1.37 0 .966.966 0 0 1 0 1.367l-2.055 2.052a1.932 1.932 0 0 0 0 2.735 1.94 1.94 0 0 0 2.74 0l4.794-4.787a.966.966 0 0 0 0-1.367.966.966 0 0 1 0-1.368.97.97 0 0 1 1.37 0 2.898 2.898 0 0 1 0 4.103l-4.795 4.787a3.879 3.879 0 0 1-5.48 0 3.864 3.864 0 0 1 0-5.47L3.19 9.344zm11.62-.69a.97.97 0 0 1-1.37 0 .966.966 0 0 1 0-1.367l2.055-2.052a1.932 1.932 0 0 0 0-2.735 1.94 1.94 0 0 0-2.74 0L7.962 7.288a.966.966 0 0 0 0 1.367.966.966 0 0 1 0 1.368.97.97 0 0 1-1.37 0 2.898 2.898 0 0 1 0-4.103l4.795-4.787a3.879 3.879 0 0 1 5.48 0 3.864 3.864 0 0 1 0 5.47L14.81 8.656z">
+                        </path>
+                    </svg>
+                    &nbsp; Industry-Academia Connect</h3>
+            </div>
+            <div class="col-md-4">
+                <h3><span class="material-icons">
+                        add_business
+                    </span>
+                    &nbsp;
+                    Marketplace connect</h3>
+            </div>
+            <div class="col-md-4">
+                <h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -1.5 24 24" width="24" height="24"
+                        preserveAspectRatio="xMinYMin" class="icon__icon">
+                        <path
+                            d="M9 13.858h-.051A.949.949 0 0 1 8 12.909a1 1 0 1 0-2 0 2.949 2.949 0 0 0 2.949 2.949H9v1a1 1 0 0 0 2 0v-1a3 3 0 0 0 0-6v-2h.022c.54 0 .978.438.978.978a1 1 0 0 0 2 0 2.978 2.978 0 0 0-2.978-2.978H11v-1a1 1 0 0 0-2 0v1a3 3 0 1 0 0 6v2zm2 0v-2a1 1 0 0 1 0 2zm-2-6v2a1 1 0 1 1 0-2zm1 13c-5.523 0-10-4.477-10-10s4.477-10 10-10 10 4.477 10 10-4.477 10-10 10z">
+                        </path>
+                    </svg>
+                    &nbsp;
+                    Funding</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="margin-top:5em">
+        <div class='row'>
+            <div class="text-center">
+                <h2 class="heading-primary">Our Startups</h2>
+            </div>
+        </div>
+        <br>
+        <section class="customer-logos slider">
+            <div class="slide"><img src='{% static "img/startups/4-1-300x213.png" %}'></div>
+            <div class="slide"><img src='{% static "img/startups/1597683045176-300x266.png" %}'></div>
+            <div class="slide"><img src=' {% static "img/startups/dhronn_png_green-300x169.png" %} '></div>
+            <div class="slide"><img src=' {% static "img/startups/IMG-20180530-WA0026-300x300.jpg" %} '></div>
+            <div class="slide"><img src=' {% static "img/startups/logo_512_512-300x300.png" %} '></div>
+            <div class="slide"><img src=' {% static "img/startups/Picture1-300x115.png" %} '></div>
+            <div class="slide"><img src=' {% static "img/startups/The-Assist-Buddy-Logo-300x55.png" %} '></div>
+            <div class="slide"><img src=' {% static "img/startups/unnamed-e1606463010391-291x300.png" %} '></div>
+        </section>
+    </div>
     {% include "./contact_us.html" %}
 </div>
 {% endblock body %}
+{% block js %}
+<script src=' {% static "js/startup-slider.js" %} '></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+{% endblock js %}

@@ -20,13 +20,13 @@ Vadodara Startup Studio – Best Startup Incubator in Vadodara
 <div class="container">
     {% if blog_show %}
     <div class='post'>
-        <h1>{{blog_data.blog_title}}</h1>
+        <h1><b>{{blog_data.blog_title}}</b></h1>
         {{blog_data.date_created}}
         {{blog_data.blog_description | safe }}
     </div>
     {% else %}
     <div class='post'>
-        <h1>{{blog_list.first.blog_title}}</h1>
+        <h1><b>{{blog_list.first.blog_title}}</b></h1>
         {{blog_list.first.date_created}}
         {{blog_list.first.blog_description | safe }}
     </div>
@@ -41,7 +41,7 @@ Vadodara Startup Studio – Best Startup Incubator in Vadodara
             {% for i in blog_list %}
             <tr>
                 <th scope="row"><a class='text-decoration-none' href='{% url "blog" i.id %}'>
-                        <h4>{{i.blog_title}}</h4>
+                        <h4 style="font-family: 'Open Sans', Arial, sans-serif;color:#0088cc;">{{i.blog_title}}</h4>
                     </a></th>
             </tr>
             {% endfor %}

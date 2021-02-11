@@ -41,7 +41,6 @@ li {
 
 #header .header-body {
 	background: #FFF;
-	border-top: 5px solid #EDEDED;
 	border-bottom: 1px solid transparent;
 	-webkit-transition: min-height 0.3s ease;
 	-moz-transition: min-height 0.3s ease;
@@ -2920,7 +2919,6 @@ html.dark .text-muted {
 	background: #0e0e0e;
 	border-top: 4px solid #0e0e0e;
 	font-size: 0.9em;
-	margin-top: 50px;
 	padding: 0 0;
 	position: relative;
 	clear: both;

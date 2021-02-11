@@ -1,13 +1,14 @@
 from django.shortcuts import render,redirect
-from .models import blog,news,contact_details
+from .models import blog,news,contact_details,OurStartUp,PressReleases,StartupSessions,Events
 from .forms import contact_form
 from django.http import HttpResponse
 
 
 # Create your views here.
 def home(request):
+    OurStartUpimg = OurStartUp.objects.all()
     form=contact_form()
-    context={'form':form}
+    context={'form':form,"OurStartUpimg":OurStartUpimg}
     return render(request,'home.html',context)
 
 def blogs(request):
@@ -38,23 +39,12 @@ def news_show(request,pid):
     context={"news_list":news_list,'news_data':news_data,"news_show":True}
     return render(request,'news.html',context)
 
-def contact_us(request):
-    return render(request,'main_contact.html')
-
-def about_us(request):
-    return render(request, 'main_about.html')
-
-def incubation_program(request):
-    return render(request,'incubation_program.html')
-
-def Launchpad_program(request):
-    return render(request,'Launchpad_program.html')
-
-def Acclerator_program(request):
-    return render(request,'Acclerator_program.html')
-
 def gallery(request):
-    return render(request,'gallery.html')
+    imgPressReleases = PressReleases.objects.all()
+    imgStartupSessions = StartupSessions.objects.all()
+    imgEvents = Events.objects.all()
+    context = {"imgPressReleases":imgPressReleases,"imgStartupSessions":imgStartupSessions,"imgEvents":imgEvents}
+    return render(request,'gallery.html',context)
 
 def get_detail(request):
     if request.method=='POST':

@@ -3,6 +3,65 @@
 Vadodara Startup Studio – Best Startup Incubator in Vadodara
 {% endblock title %}
 {% load static %}
+{% block css %}
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href='{% static "css/startup-slider.css" %}'>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+{% endblock css %}
 {% block body %}
 
+<div class="container" style="margin-top:5em">
+    <div class='row'>
+        <div class="text-center">
+            <h1 class="heading-primary">Events</h1>
+        </div>
+    </div>
+    <br>
+    <section class="customer-logos slider">
+              {% for img in imgEvents  %}
+                <div class="slide">
+                <img src='{{img.image.url}}'>
+                </div>
+                  
+                {% endfor %}
+           </section>
+</div>
+
+<div class="container" style="margin-top:5em">
+    <div class='row'>
+        <div class="text-center">
+            <h1 class="heading-primary">Startup Sessions</h1>
+        </div>
+    </div>
+    <br>
+    <section class="customer-logos slider">
+              {% for img in imgStartupSessions  %}
+                <div class="slide">
+                <img src='{{img.image.url}}'>
+                </div>
+                  
+                {% endfor %}
+    </section>
+</div>
+
+<div class="container" style="margin-top:5em;margin-bottom:5em">
+    <div class='row'>
+        <div class="text-center">
+            <h1 class="heading-primary">Press Releases</h1>
+        </div>
+    </div>
+    <br>
+    <section class="customer-logos slider">
+              {% for img in imgPressReleases  %}
+                <div class="slide">
+                <img src='{{img.image.url}}'>
+                </div>
+                  
+                {% endfor %}
+    </section>
+</div>
 {% endblock body %}
+{% block js %}
+<script src=' {% static "js/startup-slider.js" %} '></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+{% endblock js %}

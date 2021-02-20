@@ -1,7 +1,7 @@
 from django.shortcuts import render,redirect
 from .models import blog,news,contact_details,OurStartUp,PressReleases,StartupSessions,Events
 from .forms import contact_form
-from django.http import HttpResponse
+from django.http import HttpResponse,JsonResponse
 
 
 # Create your views here.
@@ -56,3 +56,8 @@ def get_detail(request):
             return JsonResponse({"error": form.errors}, status=400)
     return JsonResponse({"error": ""}, status=400)
 
+
+def Startups(request):
+    OurStartUpimg = OurStartUp.objects.all()
+    context={"OurStartUpimg":OurStartUpimg}
+    return render(request,"startups.html",context)

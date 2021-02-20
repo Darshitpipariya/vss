@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import blog, news, contact_details, OurStartUp,PressReleases,StartupSessions,Events
+from .models import blog, news, contact_details, OurStartUp,PressReleases,StartupSessions,Events,incubation,launchpad,accelaration
 
 # Register your models here.
 admin.site.register(contact_details)
@@ -18,4 +18,22 @@ class blogAdmin(admin.ModelAdmin):
 class newsAdmin(admin.ModelAdmin):
     class Media:
         js = ("js/admin/news.js",)
+
+
+@admin.register(incubation)
+class incubationAdmin(admin.ModelAdmin):
+    class Media:
+        js = ("js/admin/incubation.js",)
+
+
+@admin.register(launchpad)
+class launchpadAdmin(admin.ModelAdmin):
+    class Media:
+        js = ("js/admin/launchpad.js",)
+
+
+@admin.register(accelaration)
+class accelarationAdmin(admin.ModelAdmin):
+    class Media:
+        js = ("js/admin/accelaration.js",)
 

@@ -18,34 +18,34 @@ Vadodara Startup Studio – Best Startup Incubator in Vadodara
         color: #0088CC;
     }
 
-    .my-font{
+    .my-font {
         font-family: 'Asap', sans-serif;
-        font-size:22px;
+        font-size: 22px;
         display: inline;
         margin-top: 0px;
         margin-bottom: 0px;
     }
 
     .card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 100%;
-}
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        width: 100%;
+    }
 
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
 
-.card-font{
-    font-size: 15px;
-    margin-top: 5%;
-    font-family: 'Open Sans', Arial, sans-serif
-}
+    .card-font {
+        font-size: 15px;
+        margin-top: 5%;
+        font-family: 'Open Sans', Arial, sans-serif
+    }
 
 
-.mycontainer {
-  padding: 2px 16px;
-}
+    .mycontainer {
+        padding: 2px 16px;
+    }
 </style>
 {% endblock css %}
 {% block body %}
@@ -55,21 +55,25 @@ Vadodara Startup Studio – Best Startup Incubator in Vadodara
 
         <div id="revolutionSlider" class="slider rev_slider" data-plugin-revolution-slider
             data-plugin-options='{"delay": 9000, "gridwidth": 1170, "gridheight": 500}'>
-
+            <!-- to add new cover images add li tag and set src in given format -->
+            <!-- To remove cover image remove li tag of image -->
             <ul>
                 <li data-transition="fade">
-                    <img src="{% static 'img/img1.png' %} " alt="" data-bgposition="center center"
-                        data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
+                    <!-- cover image1 -->
+                    <img src="{% static 'img/img1.png' %} " alt="" data-bgposition="center center" data-bgfit="cover"
+                        data-bgrepeat="no-repeat" class="rev-slidebg">
                 </li>
 
                 <li data-transition="fade">
-                    <img src="{% static 'img/img2.png' %} " alt="" data-bgposition="center center"
-                        data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-ret>
+                    <!-- cover image2 -->
+                    <img src="{% static 'img/img2.png' %} " alt="" data-bgposition="center center" data-bgfit="cover"
+                        data-bgrepeat="no-repeat" class="rev-slidebg" data-no-ret>
                 </li>
 
                 <li data-transition="fade">
-                    <img src="{% static 'img/img3.png' %} " alt="" data-bgposition="center center"
-                        data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                    <!-- cover image1 -->
+                    <img src="{% static 'img/img3.png' %} " alt="" data-bgposition="center center" data-bgfit="cover"
+                        data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
                 </li>
             </ul>
 
@@ -84,24 +88,28 @@ Vadodara Startup Studio – Best Startup Incubator in Vadodara
             <div class="counters counters-text-light">
                 <div class="col-md-3 col-sm-6">
                     <div class="counter">
-                        <strong data-to="50">50</strong>
+                        <!-- update Startup incubated counter here -->
+                        <strong data-to="50">50</strong>  
                         <label>STARTUPS INCUBATED</label>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="counter">
+                        <!-- update Startup mentored counter here -->
                         <strong data-to="65">65</strong>
                         <label>STARTUPS MENTORED</label>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="counter">
+                        <!-- update Jobs generated counter here -->
                         <strong data-to="515">515</strong>
                         <label>JOBS GENERATED</label>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="counter">
+                        <!-- update Revenue generated counter here -->
                         <strong data-to="2.78">2.78</strong>
                         <label>CR REVENUE GENERATED</label>
                     </div>
@@ -113,155 +121,168 @@ Vadodara Startup Studio – Best Startup Incubator in Vadodara
 
     {% include "./about_us.html" %}
     <hr>
+
+    <!-- Programs section -->
     <div class="row">
-            <div class="text-center">
-                <h2 class="heading-primary">
-                    PROGRAMS
-                </h2>
-            </div>
+        <div class="text-center">
+            <h2 class="heading-primary">
+                PROGRAMS
+            </h2>
         </div>
-<div class="container">
-<div class="row" style="display: inline;">
-    <div class="col-md-4">
-    <div class="card">
-  <div class="mycontainer">
-    <h4 class="heading-primary text-center"><b>Incubator Program</b></h4> 
-    <p class="card-font text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta illum labore deserunt dolorem ratione iusto dolore delectus similique quis maiores doloremque eos repellat quisquam animi nulla suscipit ipsum necessitatibus, molestiae distinctio voluptates laudantium quam nemo enim modi! Dolorum possimus, ullam odit dolorem quidem iste, animi sit beatae non eos cum!
-    </p> 
-  </div>
-</div>
-</div>
-
-<div class="col-md-4">
-<div class="card">
-  <div class="mycontainer">
-    <h4 class="heading-primary text-center"><b>Launchpad Program</b></h4> 
-    <p class="card-font text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta illum labore deserunt dolorem ratione iusto dolore delectus similique quis maiores doloremque eos repellat quisquam animi nulla suscipit ipsum necessitatibus, molestiae distinctio voluptates laudantium quam nemo enim modi! Dolorum possimus, ullam odit dolorem quidem iste, animi sit beatae non eos cum!
-    </p> 
-  </div>
-</div>
-</div>
-
-<div class="col-md-4">
-<div class="card">
-  <div class="mycontainer">
-    <h4 class="heading-primary text-center"><b>Accelerate Program</b></h4> 
-    <p class="card-font text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta illum labore deserunt dolorem ratione iusto dolore delectus similique quis maiores doloremque eos repellat quisquam animi nulla suscipit ipsum necessitatibus, molestiae distinctio voluptates laudantium quam nemo enim modi! Dolorum possimus, ullam odit dolorem quidem iste, animi sit beatae non eos cum!
-    </p> 
-  </div>
-</div>
-</div>
-</div>
-</div>
-        
-
-
     </div>
     <div class="container">
-        <div class="row">
-            <div class="text-center">
-                <h2 class="heading-primary">
-                    Facilities and Offerings
-                </h2>
-                <br>
-                <h4>We have created a state of the art startup incubation
-                    centre for budding startups across Gujarat. Here is
-                    what we offer </h4>
+        <div class="row" style="display: inline;">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="mycontainer">
+                        <h4 class="heading-primary text-center"><b>Incubator Program</b></h4>
+                        <!-- edit discription of Incubator program -->
+                        <p class="card-font text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+                            illum labore deserunt dolorem ratione iusto dolore delectus similique quis maiores
+                            doloremque eos repellat quisquam animi nulla suscipit ipsum necessitatibus, molestiae
+                            distinctio voluptates laudantium quam nemo enim modi! Dolorum possimus, ullam odit dolorem
+                            quidem iste, animi sit beatae non eos cum!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="mycontainer">
+                        <h4 class="heading-primary text-center"><b>Launchpad Program</b></h4>
+                        <!-- edit discription of Lounchpad program -->
+                        <p class="card-font text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+                            illum labore deserunt dolorem ratione iusto dolore delectus similique quis maiores
+                            doloremque eos repellat quisquam animi nulla suscipit ipsum necessitatibus, molestiae
+                            distinctio voluptates laudantium quam nemo enim modi! Dolorum possimus, ullam odit dolorem
+                            quidem iste, animi sit beatae non eos cum!
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="mycontainer">
+                        <h4 class="heading-primary text-center"><b>Accelerate Program</b></h4>
+                        <!-- edit discription of Accelerate program-->
+                        <p class="card-font text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+                            illum labore deserunt dolorem ratione iusto dolore delectus similique quis maiores
+                            doloremque eos repellat quisquam animi nulla suscipit ipsum necessitatibus, molestiae
+                            distinctio voluptates laudantium quam nemo enim modi! Dolorum possimus, ullam odit dolorem
+                            quidem iste, animi sit beatae non eos cum!
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-        <br>
-        <div class="row" style="margin-bottom: 25px;">
+    </div>
 
 
-            
-            <div class="col-md-4">
-                <div class="row">
+
+</div>
+<div class="container">
+    <div class="row">
+        <div class="text-center">
+            <h2 class="heading-primary">
+                Facilities and Offerings
+            </h2>
+            <br>
+            <h4>We have created a state of the art startup incubation
+                centre for budding startups across Gujarat. Here is
+                what we offer </h4>
+        </div>
+    </div>
+    <br>
+    <div class="row" style="margin-bottom: 25px;">
+        <div class="col-md-4">
+            <div class="row">
                 <div class="col-md-1">
-<span class="material-icons">
+                    <span class="material-icons">
                         support
                     </span>
                 </div>
-                    <h3 class="my-font col-md-11">Regulatory Support</h3>
-                    </div>
+                <h3 class="my-font col-md-11">Regulatory Support</h3>
             </div>
-            <div class="col-md-4">
-                <div class="row">
+        </div>
+        <div class="col-md-4">
+            <div class="row">
                 <div class="col-md-1">
-<span class="material-icons">
+                    <span class="material-icons">
                         group_work
                     </span>
                 </div>
-                    <h3 class="my-font col-md-11">Co-working and Allied Spaces</h3>
-                    </div>
+                <h3 class="my-font col-md-11">Co-working and Allied Spaces</h3>
             </div>
-            <div class="col-md-4">
-                <div class="row">
+        </div>
+        <div class="col-md-4">
+            <div class="row">
                 <div class="col-md-1">
-<span class="material-icons">
+                    <span class="material-icons">
                         help
                     </span>
                 </div>
-                    <h3 class="my-font col-md-11">Startup Counselling and Hand-holding support</h3>
-                    </div>
+                <h3 class="my-font col-md-11">Startup Counselling and Hand-holding support</h3>
             </div>
-            
         </div>
-        <br>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="row">
+
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="row">
                 <div class="col-md-1">
-<span class="material-icons">
+                    <span class="material-icons">
                         link
                     </span>
                 </div>
-                    <h3 class="my-font col-md-11">Industry-Academia Connect</h3>
-                    </div>
+                <h3 class="my-font col-md-11">Industry-Academia Connect</h3>
             </div>
+        </div>
 
-<div class="col-md-4">
-                <div class="row">
+        <div class="col-md-4">
+            <div class="row">
                 <div class="col-md-1">
-<span class="material-icons">
+                    <span class="material-icons">
                         add_business
                     </span>
                 </div>
-                    <h3 class="my-font col-md-11">Marketplace connect</h3>
-                    </div>
+                <h3 class="my-font col-md-11">Marketplace connect</h3>
             </div>
+        </div>
 
-            <div class="col-md-4">
-                <div class="row">
+        <div class="col-md-4">
+            <div class="row">
                 <div class="col-md-1">
-<span class="material-icons">
+                    <span class="material-icons">
                         monetization_on
                     </span>
                 </div>
-                    <h3 class="my-font col-md-11">Funding</h3>
-                    </div>
+                <h3 class="my-font col-md-11">Funding</h3>
             </div>
         </div>
     </div>
+</div>
 
 
-    <div class="container" style="margin-top:4em">
-        <div class='row'>
-            <div class="text-center">
-                <h2 class="heading-primary">Our Startups</h2>
-
-            </div>
+<div class="container" style="margin-top:4em">
+    <div class='row'>
+        <div class="text-center">
+            <h2 class="heading-primary">Our Startups</h2>
         </div>
-        <br>
-        <section class="customer-logos slider">
-                {% for img in OurStartUpimg  %}
-                <div class="slide">
-                <img src='{{img.image.url}}'>
-                </div>
-                  
-                {% endfor %}
-        </section>
     </div>
-    {% include "./contact_us.html" %}
+    <br>
+    <section class="customer-logos slider">
+        {% for img in OurStartUpimg  %}
+        <div class="slide">
+            <a href='{% url "Startups" %}'><img src='{{img.image.url}}'></a>
+        </div>
+
+        {% endfor %}
+    </section>
+</div>
+{% include "./contact_us.html" %}
 </div>
 {% endblock body %}
 {% block js %}

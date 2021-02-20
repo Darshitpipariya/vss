@@ -9,4 +9,5 @@ urlpatterns = [
     path("news/<slug:pid>", views.news_show, name="news_item"),
     path("gallery", views.gallery, name="gallery"),
     path("get_detail", views.get_detail, name="get_detail"),
+    path("Startups",views.Startups,name="Startups"),
 ]

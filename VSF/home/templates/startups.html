@@ -1,0 +1,20 @@
+{% extends "./basic.html" %}
+{% block title %}
+Vadodara Startup Studio – Best Startup Incubator in Vadodara
+{% endblock title %}
+{% load static %}
+{% block body %}
+<div class="container-fluid">
+    {% for img in OurStartUpimg  %}
+    <div class="row">
+        <div class="col-md-3">
+            <img src='{{img.image.url}}'>
+        </div>
+        
+        <div class="col-md-9 ">
+            darshit
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock body %}

@@ -10,4 +10,7 @@ urlpatterns = [
     path("gallery", views.gallery, name="gallery"),
     path("get_detail", views.get_detail, name="get_detail"),
     path("Startups",views.Startups,name="Startups"),
+    path("Incubation", views.Incubation, name="Incubation"),
+    path("Launchpad", views.Launchpad, name="Launchpad"),
+    path("Accelaration", views.Accelaration, name="Accelaration"),
 ]

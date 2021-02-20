@@ -23,13 +23,13 @@ class newsAdmin(admin.ModelAdmin):
 @admin.register(incubation)
 class incubationAdmin(admin.ModelAdmin):
     class Media:
-        js = ("js/admin/incubation.js",)
+        js = ("js/admin/accelaration.js",)
 
 
 @admin.register(launchpad)
 class launchpadAdmin(admin.ModelAdmin):
     class Media:
-        js = ("js/admin/launchpad.js",)
+        js = ("js/admin/accelaration.js",)
 
 
 @admin.register(accelaration)

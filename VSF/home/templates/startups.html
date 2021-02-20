@@ -3,18 +3,47 @@
 Vadodara Startup Studio – Best Startup Incubator in Vadodara
 {% endblock title %}
 {% load static %}
+{% block css %}
+{% endblock css %}
 {% block body %}
-<div class="container-fluid">
+<div class="container" style="margin-top: 2%;">
     {% for img in OurStartUpimg  %}
-    <div class="row">
-        <div class="col-md-3">
-            <img src='{{img.image.url}}'>
+    <div class="row" id="{{img.id}}" style="margin-bottom: 3%;">
+        <div class="col-md-3" style="height: 200px;">
+            <img src='{{img.image.url}}'   style="max-width: 100%;
+        max-height: 100%;
+        display: block;">
         </div>
-        
-        <div class="col-md-9 ">
-            darshit
+        <div class="col-md-7 col-sm-offset-1">
+            <div class="row" id="brand_name">
+                <h3>
+                    {{img.brand_name}}
+                </h3>
+            </div>
+            <div class="row" id="founder_name">
+                <div class="row">
+                    <div class="col-md-12">
+                        <label>Founders</label><h4 style="display: inline;margin-left:5px;">{{img.founder_name}}</h4>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row" id="sector">
+                <div class="row">
+                    <div class="col-md-12">
+                        <label>Sector</label><h4 style="display: inline;margin-left:5px;">{{img.sector}}</h4>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="row" id="description">
+                <p>
+                    {{img.description}}
+                </p>
+            </div>
         </div>
     </div>
+
     {% endfor %}
 </div>
 {% endblock body %}

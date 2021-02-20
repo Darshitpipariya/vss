@@ -89,28 +89,28 @@ Vadodara Startup Studio – Best Startup Incubator in Vadodara
                 <div class="col-md-3 col-sm-6">
                     <div class="counter">
                         <!-- update Startup incubated counter here -->
-                        <strong data-to="50">50</strong>  
+                        <strong data-to="50" data-append="+">50+</strong>  
                         <label>STARTUPS INCUBATED</label>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="counter">
                         <!-- update Startup mentored counter here -->
-                        <strong data-to="65">65</strong>
+                        <strong data-to="65" data-append="+">65+</strong>
                         <label>STARTUPS MENTORED</label>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="counter">
                         <!-- update Jobs generated counter here -->
-                        <strong data-to="515">515</strong>
+                        <strong data-to="515" data-append="+">515+</strong>
                         <label>JOBS GENERATED</label>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="counter">
                         <!-- update Revenue generated counter here -->
-                        <strong data-to="2.78">2.78</strong>
+                        <strong data-to="2.78" data-append="+">2.78+</strong>
                         <label>CR REVENUE GENERATED</label>
                     </div>
                 </div>
@@ -133,7 +133,8 @@ Vadodara Startup Studio – Best Startup Incubator in Vadodara
     <div class="container">
         <div class="row" style="display: inline;">
             <div class="col-md-4">
-                <div class="card">
+                <div class="card"> 
+                    <a href="{% url 'Incubation' %}" target="_blank" style="text-decoration: none;">
                     <div class="mycontainer">
                         <h4 class="heading-primary text-center"><b>Incubator Program</b></h4>
                         <!-- edit discription of Incubator program -->
@@ -144,12 +145,15 @@ Vadodara Startup Studio – Best Startup Incubator in Vadodara
                             quidem iste, animi sit beatae non eos cum!
                         </p>
                     </div>
+                    </a>
                 </div>
             </div>
 
             <div class="col-md-4">
                 <div class="card">
+                    <a href="{% url 'Launchpad' %}" target="_blank" style="text-decoration: none;">
                     <div class="mycontainer">
+                        
                         <h4 class="heading-primary text-center"><b>Launchpad Program</b></h4>
                         <!-- edit discription of Lounchpad program -->
                         <p class="card-font text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
@@ -159,11 +163,13 @@ Vadodara Startup Studio – Best Startup Incubator in Vadodara
                             quidem iste, animi sit beatae non eos cum!
                         </p>
                     </div>
+                    </a>
                 </div>
             </div>
 
             <div class="col-md-4">
                 <div class="card">
+                    <a href="{% url 'Accelaration' %}" target="_blank" style="text-decoration: none;">
                     <div class="mycontainer">
                         <h4 class="heading-primary text-center"><b>Accelerate Program</b></h4>
                         <!-- edit discription of Accelerate program-->
@@ -174,6 +180,7 @@ Vadodara Startup Studio – Best Startup Incubator in Vadodara
                             quidem iste, animi sit beatae non eos cum!
                         </p>
                     </div>
+                </a>
                 </div>
             </div>
         </div>
@@ -269,14 +276,17 @@ Vadodara Startup Studio – Best Startup Incubator in Vadodara
 <div class="container" style="margin-top:4em">
     <div class='row'>
         <div class="text-center">
-            <h2 class="heading-primary">Our Startups</h2>
+            <h2 class="heading-primary">
+                <a href="{% url 'Startups' %}" target="_blank" style="text-decoration: none;">
+                Our Startups</h2>
+            </a>
         </div>
     </div>
     <br>
     <section class="customer-logos slider">
         {% for img in OurStartUpimg  %}
         <div class="slide">
-            <a href='{% url "Startups" %}'><img src='{{img.image.url}}'></a>
+            <a href='{% url "Startups" %}#{{img.id}}' target="_blank"><img src='{{img.image.url}}'></a>
         </div>
 
         {% endfor %}
